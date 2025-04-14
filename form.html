@@ -1,0 +1,88 @@
+<html>
+<head>
+  <title>FORM</title>
+  <style>
+    body {
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      background-color: #f5f5f5;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .form-container {
+      background-color: #faf9f9;
+      padding: 20px 40px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      width: 300px;
+    }
+
+    .form-container h2 {
+      margin-bottom: 20px;
+      text-align: center;
+      color: #333;
+    }
+    h5{
+        font-family: cursive;
+        text-align: center;
+        color: brown;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+    }
+    input[type="star"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      background-color: #21f873;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 20px
+    }
+
+    input[type="submit"]:hover {
+      background-color: #1be4ff;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>FORM</h2>
+    <form>
+      <label for="name">User Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Your email" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter password" required><br>
+      
+      <h5>Re-Check the form and then click on Submit</h5>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</body>
+</html>
